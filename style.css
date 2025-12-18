@@ -1,0 +1,828 @@
+/* Reset CSS */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    line-height: 1.6;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background-color: #f9f9f9;
+
+    color: #333;
+
+}
+
+
+
+/* Header and Navigation */
+
+header {
+
+    background: #4CAF50;
+
+    color: #fff;
+
+    padding: 1rem 0;
+
+    text-align: center;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 1rem;
+
+}
+
+
+
+.logo a {
+
+    color: #fff;
+
+    font-size: 1.75rem;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+
+.nav-links ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+}
+
+
+
+.nav-links ul li {
+
+    margin-left: 1.5rem;
+
+}
+
+
+
+.nav-links ul li a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 5px;
+
+    transition: background 0.3s ease, color 0.3s ease;
+
+}
+
+
+
+.nav-links ul li a:hover {
+
+    background: #45a049;
+
+    color: #fff;
+
+}
+
+
+
+.nav-toggle {
+
+    display: none;
+
+    cursor: pointer;
+
+}
+
+
+
+.nav-toggle .fas {
+
+    color: #fff;
+
+    font-size: 1.5rem;
+
+}
+
+
+
+/* Main Content */
+
+main {
+
+    max-width: 1200px;
+
+    margin: 2rem auto;
+
+    padding: 0 1rem;
+
+}
+
+
+
+section {
+
+    margin-bottom: 2.5rem;
+
+    padding: 1.5rem;
+
+    background-color: #fff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+h1, h2 {
+
+    margin-bottom: 1rem;
+
+    color: #4CAF50;
+
+    font-weight: bold;
+
+}
+
+
+
+p {
+
+    margin-bottom: 1rem;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+}
+
+
+
+ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+ul li {
+
+    margin-bottom: 0.75rem;
+
+    padding: 0.5rem;
+
+    background: #eef9f2;
+
+    border-left: 5px solid #4CAF50;
+
+    border-radius: 4px;
+
+}
+
+
+
+ul li ul {
+
+    padding-left: 1rem;
+
+}
+
+
+
+ul li ul li {
+
+    background: none;
+
+    border: none;
+
+    padding: 0.25rem 0;
+
+}
+
+
+
+ul li a {
+
+    color: #4CAF50;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+
+}
+
+
+
+ul li a:hover {
+
+    color: #388e3c;
+
+}
+
+
+
+/* Footer */
+
+footer {
+
+    background: #333;
+
+    color: #fff;
+
+    text-align: center;
+
+    padding: 1rem 0;
+
+    margin-top: 2rem;
+
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .nav-links ul {
+
+        flex-direction: column;
+
+        display: none;
+
+        background: transparent ; 
+
+    }
+
+
+
+    .nav-links ul.active {
+
+        display: flex;
+
+    }
+
+
+
+    .nav-toggle {
+
+        display: block;
+
+    }
+
+
+
+    .nav-links ul li {
+
+        margin: 0;
+
+        border-top: 1px solid #fff;
+
+        border-bottom: 1px solid #fff;
+
+    }
+
+
+
+    .nav-links ul li a {
+
+        display: block;
+
+        padding: 0.75rem 1rem;
+
+        color: #fff;
+
+        text-align: center;
+
+        background: #4CAF50; 
+
+    }
+
+
+
+    .nav-links ul li a:hover {
+
+        background: #45a049;
+
+    }
+
+}
+
+#app-promo {
+    background: linear-gradient(135deg, #1a2a6c 0%, #2c3e50 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+#app-promo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255,215,0,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(52,152,219,0.1) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.app-promo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Icône principale */
+.app-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    display: block;
+    animation: pulse 2s infinite;
+    color: #FFD700;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Titre et badge */
+#app-promo h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.app-badge {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    color: #000;
+    padding: 12px 18px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 10px 0 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+/* Features Grid */
+.app-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature:nth-child(1) .feature-icon { color: #27ae60; }
+.feature:nth-child(2) .feature-icon { color: #3498db; }
+.feature:nth-child(3) .feature-icon { color: #e74c3c; }
+
+.feature h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.feature p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* Section bonus highlight */
+.bonus-highlight {
+    background: linear-gradient(90deg, #e74c3c, #c0392b);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+}
+
+.bonus-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+    color: #f1c40f;
+}
+
+.bonus-highlight h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.bonus-highlight p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+}
+
+/* Code promo */
+.promo-code-container {
+    margin: 25px 0;
+}
+
+.promo-code {
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 20px auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    max-width: 300px;
+}
+
+.promo-code:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(46, 204, 113, 0.5);
+}
+
+.promo-code.copied {
+    background: linear-gradient(90deg, #3498db, #2980b9);
+}
+
+.code-text {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+}
+
+.copy-icon {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.copy-message {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Bouton téléchargement */
+.download-container {
+    margin: 40px 0;
+}
+
+.download-btn {
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    color: #000;
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.5);
+    color: #000;
+}
+
+.badge-new {
+    background: #e74c3c;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Grille avantages */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.advantage {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.advantage-icon {
+    font-size: 2em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.advantage:nth-child(1) .advantage-icon { color: #f39c12; }
+.advantage:nth-child(2) .advantage-icon { color: #2ecc71; }
+.advantage:nth-child(3) .advantage-icon { color: #9b59b6; }
+
+.advantage h4 {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.advantage p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+}
+
+/* Instructions Android */
+.android-instructions {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 40px auto;
+    text-align: left;
+    max-width: 700px;
+    border-left: 5px solid #FFD700;
+}
+
+.android-instructions summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    list-style: none;
+}
+
+.android-instructions summary::-webkit-details-marker {
+    display: none;
+}
+
+.android-instructions summary i {
+    color: #FFD700;
+}
+
+.instructions-content {
+    margin-top: 20px;
+}
+
+.instructions-content ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+.instructions-content li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: white;
+}
+
+.instructions-content li i {
+    color: #FFD700;
+    min-width: 20px;
+}
+
+.instructions-content li strong {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+/* Section témoignage */
+.testimonial-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 600px;
+    border-left: 5px solid #3498db;
+}
+
+.testimonial-icon {
+    font-size: 2em;
+    color: #FFD700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.testimonial-text {
+    color: white;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.author-name {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.author-location {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+}
+
+/* Mention légale */
+.legal-notice {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+}
+
+.legal-notice i {
+    margin-right: 5px;
+    color: #FFD700;
+}
+
+.legal-text {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #app-promo {
+        padding: 40px 15px;
+        margin: 2rem 1rem;
+    }
+    
+    .app-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .download-btn {
+        padding: 18px 30px;
+        font-size: 1.1em;
+        width: 100%;
+        max-width: 400px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .promo-code {
+        font-size: 1.5em;
+        padding: 18px 30px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .app-icon {
+        font-size: 60px;
+    }
+    
+    #app-promo h2 {
+        font-size: 1.8em;
+    }
+    
+    .bonus-highlight {
+        padding: 15px;
+    }
+    
+    .bonus-highlight h3 {
+        font-size: 1.3em;
+    }
+    
+    .android-instructions {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .promo-code {
+        font-size: 1.3em;
+        padding: 15px 25px;
+    }
+    
+    .feature {
+        padding: 20px;
+    }
+    
+    .feature-icon {
+        font-size: 2em;
+    }
+    
+    .testimonial-section {
+        padding: 20px;
+    }
+    }
